@@ -1,4 +1,4 @@
-/*
+
 let warn = {
     danger: function(){
         alert('Danger!')
@@ -10,7 +10,7 @@ let warn = {
 
 warn.danger();
 warn.fire();
-*/
+
 
 
 let Car = {
@@ -43,3 +43,19 @@ let Ford = Object.create(Car);
 Ford.year = 2015;
 Ford.displayYear();
 Ford.displayColor();
+
+
+
+
+let user = {
+name:'',
+    setterName: function(param){
+        this.name = param;
+        return this.name;
+    }
+
+}
+
+console.log(user.setterName('Sergey'));
+
+
